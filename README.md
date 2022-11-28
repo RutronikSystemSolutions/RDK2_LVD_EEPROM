@@ -1,4 +1,4 @@
-# RutDevKit-PSoC62_LVD_EEPROM
+# RDK2_LVD_EEPROM
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "LVD EEPROM" Application. 
 
@@ -11,15 +11,16 @@ The low voltage detector (LVD) generate an interrupt to save the  counter conten
 
 A capacitor must be added to the hardware to extend the time at shutdown from 3ms to 13ms. For this a 100µF type between 3.3V and GND is sufficient.
 
+## Requirements
+
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.0
+
 ### Using the code example with a ModusToolbox IDE:
 
 1. Import the project: **File** > **Import...** > **General** > **Existing Projects into Workspace** > **Next**.
-2. Select the directory where **"RutDevKit-PSoC62_I2C_Scanner"** resides and click  **Finish**.
-3. Select and build the project **Project ** > **Build Project**.
-
-### Customization of RutDevKit-PSoC62:
-
-
+2. Select the directory where **"RDK2_I2C_Scanner"** resides and click  **Finish**.
+3. Update libraries using  a **"Library Manager"** tool.
+4. Select and build the project **Project ** > **Build Project**.
 
 ### Operation
 
@@ -30,7 +31,7 @@ On start-up, timer counter value and start-up count will be read back.
 
 ### Debugging
 
-If you successfully have imported the application, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and debug process starts.
+If you successfully have imported the application, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and the debugging process starts.
 
 <img src="images/LVD_EEPROM_debug_start.png" style="zoom:100%;" />
 
