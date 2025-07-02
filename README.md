@@ -2,18 +2,18 @@
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "LVD EEPROM" Application. 
 
-This application is saving a 32bit value in emulated EEPROM.
-The low voltage detector (LVD) generate an interrupt to save the  counter contend on shutdown. 
+This application is saving a 32-bit value in the emulated EEPROM.
+The low voltage detector (LVD) generates an interrupt to save the counter content on shutdown. 
 
  <img src="images/rdk2_rev1.jpg" style="zoom:80%;" />
 
-### Hardware customizations:
+### Hardware customisations:
 
 A capacitor must be added to the hardware to extend the time at shutdown from 3ms to 13ms. For this a 100µF type between 3.3V and GND is sufficient.
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.x** [built with **v3.0**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.0**]
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
@@ -128,14 +128,14 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
 ### Operation
 
-The application count the number of start-ups, save a timer counter value by lose of voltage.
-On start-up, timer counter value and start-up count will be read back.  
+The application counts the number of start-ups, saves a timer counter value due to a loss of voltage.
+On start-up, the timer counter value and start-up count will be read back.  
 
 <img src="images/LVD_EEPROM_debug_ouput.png" style="zoom:100%;" />
 
 ### Debugging
 
-If you successfully have imported the application, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and the debugging process starts.
+If you have successfully imported the application, the debug configurations are already prepared to use with the KitProg3, MiniProg4. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and the debugging process starts.
 
 <img src="images/LVD_EEPROM_debug_start.png" style="zoom:100%;" />
 
